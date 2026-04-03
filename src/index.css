@@ -3,6 +3,23 @@
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
 
+
+@font-face {
+  font-family: 'ABO';
+  src: url('/ABO.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Grey';
+  src: url('/grey-reg.woff2') format('woff2');
+}
+
+
+
+body{
+  font-family: 'Grey';
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
