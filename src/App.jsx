@@ -7,7 +7,13 @@ function MainApp(){
   const { role, setRole } = useFinance();
 
   return (
-    <div className="md:p-3 p-2 pt-5 bg-gray-100 min-h-screen space-y-6 tracking-tighter">
+    <div className="md:p-3 bg-gray-100 p-2 pt-5 min-h-screen space-y-6 tracking-tighter"
+    // style={{
+    //   backgroundImage: `url("/wave.avif")`,
+    //   backgroundSize: 'contain',
+    //   backgroundPosition: 'center'
+    // }}
+    >
       <div className="flex justify-between">
         <h1 className="text-2xl">Finance Dashboard</h1>
         <select value={role} onChange={(e)=>setRole(e.target.value)}>

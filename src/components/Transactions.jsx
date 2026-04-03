@@ -88,7 +88,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="bg-white p-4 rounded-md tracking-tighter">
+    <div className="bg-white/50 p-4 rounded-md tracking-tight">
       <div className="flex flex-wrap justify-between mb-3">
         <div className="flex flex-wrap items-center gap-4">
                   <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search" className="border px-2 py-1" />
@@ -148,13 +148,13 @@ useEffect(() => {
           <TableRow key={t.id} className="hover:bg-gray-50 transition">
             <TableCell>{t.date}</TableCell>
 
-            <TableCell className="font-medium">
+            <TableCell className="">
               {t.category}
             </TableCell>
 
             <TableCell>
               <span
-                className={`px-2 py-1 rounded text-xs font-semibold ${
+                className={`px-2 py-1 rounded text-xs  ${
                   t.type === "income"
                     ? "bg-green-100 text-green-700"
                     : "bg-red-100 text-red-700"
@@ -164,7 +164,7 @@ useEffect(() => {
               </span>
             </TableCell>
 
-            <TableCell className="font-semibold">
+            <TableCell className="">
               ₹{t.amount}
             </TableCell>
 
@@ -196,7 +196,7 @@ useEffect(() => {
 </div>
 
       {showForm && (
-        <div className="fixed inset-0 bg-black/40 flex items-center justify-center tracking-tighter">
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center tracking-tight">
           <div className="bg-white p-4 rounded flex flex-col gap-5 w-72 relative">
             <X onClick={() => setShowForm(false)} size={16} className="absolute right-3 top-3" />
             <input placeholder="Amount" value={formData.amount} className="border border-black px-1 mt-10" onChange={(e)=>setFormData({...formData, amount:e.target.value})} />

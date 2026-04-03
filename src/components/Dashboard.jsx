@@ -22,14 +22,14 @@ const Dashboard = () => {
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
         <SummaryCard title="Balance" amount={balance} />
         <SummaryCard title="Income" amount={income} />
         <SummaryCard title="Expense" amount={expense} />
       </div>
 
-      <div className="grid md:grid-cols-2 gap-4 tracking-tighter">
-        <div className="bg-white p-4 rounded-md">
+      <div className="grid md:grid-cols-2 gap-4 tracking-tight">
+        <div className="bg-white/60 p-4 rounded-md">
           <h2>Balance Trend</h2>
           <ResponsiveContainer width="100%" height={200}>
             <LineChart data={chartData}>
@@ -41,10 +41,10 @@ const Dashboard = () => {
           </ResponsiveContainer>
         </div>
 
-<div className="bg-white p-4 rounded-md tracking-tighter">
-  <h2 className="mb-2 font-semibold">Spending Breakdown</h2>
+<div className="bg-white/60 p-4 rounded-md tracking-tight">
+  <h2 className="mb-2">Spending Breakdown</h2>
 
-  <ResponsiveContainer width="100%" height={250} className={'tracking-tighter'}>
+  <ResponsiveContainer width="100%" height={250} className={'tracking-tight'}>
     <PieChart>
       <Pie
         data={categoryData}
