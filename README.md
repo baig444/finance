@@ -1,16 +1,83 @@
-# React + Vite
+# 💰 Finance Dashboard UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and interactive finance dashboard built using React. This project demonstrates frontend skills including UI design, state management, and user interaction handling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 📊 Dashboard Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Total Balance, Income, and Expense summary cards
+* Balance trend visualization (Line Chart)
+* Spending breakdown (Pie Chart)
 
-## Expanding the ESLint configuration
+### 📄 Transactions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* View all transactions in a clean table
+* Search transactions by category
+* Add, Edit, and Delete transactions (Admin only)
+
+### 👤 Role-Based UI
+
+* Viewer: Can only view data
+* Admin: Can add, edit, and delete transactions
+* Role switch using dropdown
+
+### 💡 Insights
+
+* Displays highest spending category
+* Provides basic financial understanding
+
+### 🧠 State Management
+
+* Managed using React Context API
+* Persistent data using LocalStorage
+
+---
+
+## 🛠️ Tech Stack
+
+* React (Vite)
+* Tailwind CSS
+* Recharts
+* shadcn/ui
+
+---
+
+## 📱 UI/UX Features
+
+* Clean and minimal design
+* Responsive layout
+* Empty state handling
+* Interactive charts
+
+---
+
+## ⚡ Optional Enhancements Implemented
+
+* LocalStorage persistence
+* Role-based access simulation
+* Interactive charts
+
+---
+
+## 🧪 How to Run
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 📌 Project Approach
+
+The goal was to build a simple yet functional finance dashboard focusing on:
+
+* Clear data visualization
+* Clean UI structure
+* Proper state handling
+* Good user experience
+
+The project avoids unnecessary complexity and focuses on usability and readability.
